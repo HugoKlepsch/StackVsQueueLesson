@@ -13,5 +13,11 @@ package stackAndQueueObj;
  *
  */
 public class Queuer {
-
+	
+	
+	
+	
+	public Queuer(int length) {
+		// TODO Auto-generated constructor stub
+	}
 }

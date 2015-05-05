@@ -12,7 +12,7 @@ package stackAndQueueObj;
  * @author hugo
  *
  */
-public class Stacker {
+public class Stacker{
 	private int currentInd;
 	private int[] stack;
 	

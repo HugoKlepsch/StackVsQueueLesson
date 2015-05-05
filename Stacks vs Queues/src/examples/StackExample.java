@@ -7,6 +7,8 @@
 
 package examples;
 
+import java.util.Stack;
+
 import stackAndQueueObj.Stacker;
 
 /**
@@ -24,6 +26,7 @@ public class StackExample {
 		 */
 	public static void main(String[] args) {
 		Stacker sampleStack = new Stacker(10);
+
 		sampleStack.push(5);
 		sampleStack.push(8);
 		int elementX = sampleStack.pop();
