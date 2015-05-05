@@ -18,7 +18,7 @@ public class Stacker{
 	private int currentInd;
 	private Vector<Integer> stack;
 	
-	public Stacker(int length) {
+	public Stacker() {
 		stack = new Vector<Integer>();
 		currentInd = 0;
 	}

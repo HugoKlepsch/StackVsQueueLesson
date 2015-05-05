@@ -25,7 +25,7 @@ public class StackExample {
 		 * @Description: ( ͡° ͜ʖ ͡°)
 		 */
 	public static void main(String[] args) {
-		Stacker sampleStack = new Stacker(10);
+		Stacker sampleStack = new Stacker();
 
 		sampleStack.push(5);
 		sampleStack.push(8);
