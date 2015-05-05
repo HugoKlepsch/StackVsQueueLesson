@@ -25,8 +25,13 @@ public class StackExample {
 		 * @Description: ( ͡° ͜ʖ ͡°)
 		 */
 	public static void main(String[] args) {
+		myStack();
+		javaUtilStack();
+	}
+	
+	private static void myStack(){
 		Stacker sampleStack = new Stacker(10);
-
+		
 		sampleStack.push(5);
 		sampleStack.push(8);
 		int elementX = sampleStack.pop();
@@ -37,6 +42,22 @@ public class StackExample {
 		System.out.println(elementX + " " + elementY);
 		elementY = sampleStack.pop();
 		elementX = sampleStack.top();
+		System.out.println(elementX + " " + elementY);
+	}
+	
+	private static void javaUtilStack(){
+		Stack<Integer> sampleStack = new Stack<Integer>();
+
+		sampleStack.push(5);
+		sampleStack.push(8);
+		int elementX = sampleStack.pop();
+		sampleStack.push(elementX);
+		sampleStack.push(12);
+		sampleStack.push(13);
+		int elementY = sampleStack.pop();
+		System.out.println(elementX + " " + elementY);
+		elementY = sampleStack.pop();
+		elementX = sampleStack.peek();
 		System.out.println(elementX + " " + elementY);
 	}
 
