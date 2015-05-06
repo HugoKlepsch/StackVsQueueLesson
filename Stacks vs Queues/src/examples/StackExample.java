@@ -9,6 +9,7 @@ package examples;
 
 import java.util.Stack;
 
+import stackAndQueueObj.Queuer;
 import stackAndQueueObj.Stacker;
 
 /**
@@ -27,11 +28,33 @@ public class StackExample {
 	public static void main(String[] args) {
 		myStack();
 		javaUtilStack();
+		myQueue();
+		System.out.println("javaUtilQueue: \n");
 	}
-	
-	private static void myStack(){
+
+	private static void myQueue() {
+		System.out.println("myQueue: \n");
+		Queuer q = new Queuer();
+		System.out.println("Adding two items to queue.");
+		q.enQueue(33);
+		q.enQueue(47);
+		System.out.println("The front of queue: " + q.front());
+		System.out.println("Number of items in queue: " + q.size());
+		System.out.println("Dequeueing or removing the front item.");
+		q.deQueue();
+		System.out.println("Front of queue is now: " + q.front());
+		System.out.println("Number of items in queue now: " + q.size());
+		System.out.println("Queueing or adding a new item.");
+		q.enQueue(3);
+		System.out.println("Front of queue is now: " + q.front());
+		System.out.println("Number of items in queue now: " + q.size());
+		System.out.println("\n");
+	}
+
+	private static void myStack() {
+		System.out.println("myStack: \n");
 		Stacker sampleStack = new Stacker(10);
-		
+
 		sampleStack.push(5);
 		sampleStack.push(8);
 		int elementX = sampleStack.pop();
@@ -43,9 +66,11 @@ public class StackExample {
 		elementY = sampleStack.pop();
 		elementX = sampleStack.top();
 		System.out.println(elementX + " " + elementY);
+		System.out.println("\n");
 	}
-	
-	private static void javaUtilStack(){
+
+	private static void javaUtilStack() {
+		System.out.println("javaUtilStack: \n");
 		Stack<Integer> sampleStack = new Stack<Integer>();
 
 		sampleStack.push(5);
@@ -59,6 +84,7 @@ public class StackExample {
 		elementY = sampleStack.pop();
 		elementX = sampleStack.peek();
 		System.out.println(elementX + " " + elementY);
+		System.out.println("\n");
 	}
 
 }
