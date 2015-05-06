@@ -53,7 +53,7 @@ public class StackExample {
 
 	private static void myStack() {
 		System.out.println("myStack: \n");
-		Stacker sampleStack = new Stacker(10);
+		Stacker<Integer> sampleStack = new Stacker<Integer>();
 
 		sampleStack.push(5);
 		sampleStack.push(8);

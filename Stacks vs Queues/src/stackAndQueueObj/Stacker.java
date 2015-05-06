@@ -8,33 +8,33 @@
 
 package stackAndQueueObj;
 
+import java.util.Vector;
+
 /**
  * @author hugo
  *
  */
-public class Stacker{
-	private int currentInd;
-	private int[] stack;
+public class Stacker<T>{
+	private Vector<T> stack;
 	
-	public Stacker(int length) {
-		stack = new int[length];
-		currentInd = 0;
+	public Stacker() {
+		stack = new Vector<T>();
 	}
 	
-	public int top(){
-		return stack[currentInd];
+	public T top(){
+		return stack.get(size() - 1);
 	}
 	
-	public void push(int num){
-		stack[++currentInd] = num;
+	public void push(T num){
+		stack.add(num);
 	}
 	
-	public int pop(){
-		return stack[currentInd--];
+	public T pop(){
+		return stack.remove(size() - 1);
 	}
 	
 	public int size(){
-		return currentInd;
+		return stack.size();
 	}
 	
 	public boolean isEmpty(){
@@ -42,6 +42,6 @@ public class Stacker{
 	}
 	
 	public void makeEmpty(){
-		currentInd = 0;
+		stack.clear();
 	}
 }

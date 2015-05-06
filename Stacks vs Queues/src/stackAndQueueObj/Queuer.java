@@ -15,7 +15,7 @@ import java.util.Vector;
  *
  */
 public class Queuer <T>{
-	Vector<T> queue;
+	private Vector<T> queue;
 	
 	
 	
