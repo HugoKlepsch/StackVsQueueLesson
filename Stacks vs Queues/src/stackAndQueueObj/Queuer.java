@@ -14,16 +14,16 @@ import java.util.Vector;
  * @author hugo
  *
  */
-public class Queuer {
-	Vector<Integer> queue;
+public class Queuer <T>{
+	Vector<T> queue;
 	
 	
 	
 	public Queuer() {
-		queue = new Vector<Integer>();
+		queue = new Vector<T>();
 	}
 	
-	public int front(){
+	public T front(){
 		return queue.get(size() - 1);
 	}
 	
@@ -31,12 +31,12 @@ public class Queuer {
 		return queue.size();
 	}
 	
-	public int deQueue(){
+	public T deQueue(){
 		return queue.remove(size() - 1);
 	}
 	
-	public void enQueue(int number){
-		queue.add(number);
+	public void enQueue(T number){
+		queue.insertElementAt(number, 0);
 	}
 	
 	public boolean isEmpty(){

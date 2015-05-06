@@ -34,7 +34,7 @@ public class StackExample {
 
 	private static void myQueue() {
 		System.out.println("myQueue: \n");
-		Queuer q = new Queuer();
+		Queuer<Integer> q = new Queuer<Integer>();
 		System.out.println("Adding two items to queue.");
 		q.enQueue(33);
 		q.enQueue(47);
