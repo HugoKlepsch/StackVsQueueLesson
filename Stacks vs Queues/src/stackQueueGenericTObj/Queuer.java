@@ -6,7 +6,7 @@
 */
 
 
-package stackAndQueueObj;
+package stackQueueGenericTObj;
 
 import java.util.Vector;
 

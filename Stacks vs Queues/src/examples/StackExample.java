@@ -9,8 +9,8 @@ package examples;
 
 import java.util.Stack;
 
-import stackAndQueueObj.Queuer;
-import stackAndQueueObj.Stacker;
+import stackQueueGenericTObj.Queuer;
+import stackQueueGenericTObj.Stacker;
 
 /**
  * @author hugo
