@@ -57,6 +57,9 @@ public class StackExample {
 
 		sampleStack.push(5);
 		sampleStack.push(8);
+		
+		System.out.println("Size: " + sampleStack.size());
+		
 		int elementX = sampleStack.pop();
 		sampleStack.push(elementX);
 		sampleStack.push(12);
