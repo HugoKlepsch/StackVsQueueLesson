@@ -19,7 +19,7 @@ public class Stacker<T> { // T is the datatype that will be passed to the class 
 
 	public Stacker() { // the constructor. It does not need a parameter for length of the array because vector are
 						// variable size.
-		stack = new Vector<T>();
+		stack = new Vector<T>(); //Initializes the stack variable with the correct type. 
 	}
 
 	/**
