@@ -26,10 +26,10 @@ public class StackExample {
 		 * @Description: ( ͡° ͜ʖ ͡°)
 		 */
 	public static void main(String[] args) {
-		myStack();
-		javaUtilStack();
+//		myStack();
+//		javaUtilStack();
 		myQueue();
-		System.out.println("javaUtilQueue: \n");
+		
 	}
 
 	private static void myQueue() {
